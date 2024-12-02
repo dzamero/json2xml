@@ -1,0 +1,9 @@
+JPath,XPath,Is List,Is Root,Attributes,Parent XPath
+$.rootName,RootName,No,Yes,None,Root
+$.metadata,Metadata,No,No,None,Root
+$.metadata.createdBy,CreatedBy,No,No,None,Metadata
+$.metadata.timestamp,Timestamp,No,No,None,Metadata
+$.groups[*],Group,Yes,No,name,type,Root
+$.groups[*].subGroups[*],SubGroup,Yes,No,name,Group
+$.groups[*].subGroups[*].items[*],Item,Yes,No,id,SubGroup
+$.groups[*].subGroups[*].items[*].value,Value,No,No,None,Item
